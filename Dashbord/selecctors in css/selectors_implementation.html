@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* universal selector */
+        *{
+            color: red;
+        }
+        h2{
+            color:blue;
+        }
+        /* element selector */
+        mytag{
+            font-size:100px;
+        }
+        /* class selector */
+        .cl{
+            color:green;
+        }
+        /*Id selector */
+        #myid{
+            color:yellow;
+        }
+        /* attribute selector */
+        input{
+            font-size:30px;
+        }
+        input[type="email"]{
+            border-width: 0 0 3px 0;
+            border-color: red;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <mytag>ABCD</mytag>
+    <h2>Selectors in CSS</h2>
+    <ul>
+        <li class="cl">Universal Selector</li>
+        <li class="cl">Element Selector</li>
+        <li class="cl">Class</li>
+        <li id="myid">ID Selector</li>
+        <li>Attribute Selector</li>
+        <li>Combinators</li>
+        <li>Pseudo-class</li>
+        <li>Pseudo-element</li>
+
+    </ul>
+    <input type="email" placeholder="Enter your email"><br/><br/>
+    <input type="password" placeholder="Enter your password">
+</body>
+</html>

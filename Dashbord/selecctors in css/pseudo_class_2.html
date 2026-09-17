@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        input:enabled {
+            border-color: green;
+        }
+
+        input:disabled {
+            border-color: gray;
+        }
+        input:required {
+            border-color: red;
+        }
+        input:read-only {
+            border-color: blue;
+        }
+        input:optional {
+            border-color: orangered;
+        }
+        input:valid {
+            border-color: purple;
+        }
+        input:in-range {
+            border-color: orange;
+        }
+        input:out-of-range {
+            border-color: aqua;
+        }
+        
+
+    </style>
+</head>
+<body>
+   <input type="text" required placeholder="First Name"><br/><br/>
+    <input type="text" optional placeholder="middle Name"><br/><br/>
+    <input type="text" read-only placeholder="Last Name"><br/><br/>
+    <input type="number" min="1" max="100" placeholder="Age(1-100)"><br/><br/>
+    <input type="email" optional placeholder="Email"><br/><br/>
+    <input type="number" max="50" placeholder="Number less than 50"><br/><br/>
+
+    
+    
+    
+    <button>Submit</button>
+        <!-- enabled
+    disabled
+    required
+    optional
+    read-only
+    read-write
+    placeholder-shown
+    valid
+    invalid
+    in-range
+    out-of-range
+    -->
+
+</body>
+</html>
+

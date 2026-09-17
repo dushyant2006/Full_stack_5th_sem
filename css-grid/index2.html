@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:500px;
+            width:500px;
+            display:grid;
+            outline:1px solid black;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        .container>div{
+            font-size: 30px;
+          outline:1px solid black;
+        }
+        #box1{
+            background-color: rgb(156, 53, 53);
+            grid-column-start:1;
+            grid-column-end:3;
+            grid-row-start:1;
+            grid-row-end:3;
+            z-index: 1;
+
+        }
+        #box6{
+            background-color:grey;
+            grid-column-start:2;
+            grid-column-end:3;
+            grid-row-start:2;
+            grid-row-end:3;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1" >1</div>
+        <div id="box2" >2</div>
+        <div id="box3">3</div>
+        <div id="box4" >4</div>
+        <div id="box5" >5</div>
+        <div id="box6" >6</div>
+    </div>
+</body>
+</html>

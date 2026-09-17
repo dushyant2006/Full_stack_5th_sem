@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:grid;
+            outline:1px solid black;
+            /* grid-template-columns: 100px 100px ;
+            grid-template-rows: 100px 100px 100px; */
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            /* grid-template-columns: repeat(2,100px);
+            grid-template-rows: repeat(3,100px); */
+            grid-template-areas: 
+            "box1 box1 box2"
+            "box1 box1 box3"
+            "box4 box5 box6";
+        }
+        .container>div{
+            outline:1px solid black;
+            font-size: 30px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="grid-area:box1;">1</div>
+        <div style="grid-area:box2;">2</div>
+        <div style="grid-area:box3;">3</div>
+        <div style="grid-area:box4;">4</div>
+        <div style="grid-area:box5;">5</div>
+        <div style="grid-area:box6;">6</div>
+        
+    </div>
+</body>
+</html>
