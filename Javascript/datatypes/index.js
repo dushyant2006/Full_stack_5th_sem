@@ -1,0 +1,10 @@
+let a = 5;
+console.log(a, typeof a);
+a= "Hello";
+console.log(a, typeof a);
+a=true;
+console.log(a, typeof a);
+a = null;
+console.log(a, typeof a);
+a= undefined;
+console.log(a, typeof a);
